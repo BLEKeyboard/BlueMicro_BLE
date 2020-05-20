@@ -13,4 +13,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the firmwares
-      run: pwd && ./.build.sh
+      run: ./.build.sh

@@ -1,6 +1,5 @@
 #!/bin/bash
 set -e
-cd -- "$(dirname "$BASH_SOURCE")"
 
 verbose=false
 continueOnError=false
@@ -18,17 +17,11 @@ shift $(($OPTIND - 1))
 boardParam=$1
 
 arduinoPath="/usr/share/arduino"
-arduinoDataPath=$(cd ~/.arduino15 & pwd)
-nrf52PackagePath="/home/$USER/.arduino15/packages/adafruit/hardware/nrf52"
-
-scriptPath="$(dirname "$BASH_SOURCE")"
 
 #replace this variable with path to your avr installation
 arduinoAvrPath="$arduinoPath/hardware/arduino/avr"
-
-blueMicroPath=$(cd $scriptPath/../.. && pwd)
-firmwarePath="${blueMicroPath}/firmware"
-outputPath="${blueMicroPath}/output"
+firmwarePath=`readlink -f firmware`
+outputPath=`readlink -f output`
 outputTempPath="/tmp"
 buildPath="${outputTempPath}/.build"
 buildCachePath="${outputTempPath}/.build-cache"

@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-
-./build/docker/nrf52832.sh all:all:all
+./build/docker/nrf.sh nrf52832:all:all:all
+./build/docker/nrf.sh nrf52832:all:all:all

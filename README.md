@@ -16,6 +16,15 @@ A Keyboard Firmware for nRF52832 and nRF52840 Boards
 
 [![GitHub stars](https://img.shields.io/github/stars/jpconstantineau/BlueMicro_BLE.svg)](https://github.com/jpconstantineau/BlueMicro_BLE/stargazers)[![GitHub contributors](https://img.shields.io/github/contributors/jpconstantineau/BlueMicro_BLE.svg)](https://github.com/jpconstantineau/BlueMicro_BLE/graphs/contributors)[![Discord](https://img.shields.io/discord/449593318247235589.svg)](https://discord.gg/ecnCR9P)
 
+## How do I build?
+
+Make sure you have Docker installed, then run
+
+```
+$ ./build.sh
+```
+
+This will download the neccecary Docker image, and build the firmwares inside.
 
 **Compatible Hardware**  
 

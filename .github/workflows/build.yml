@@ -1,10 +1,6 @@
 name: Compile firmwares
 
-on:
-  push:
-    branches: [ githubActions ]
-  pull_request:
-    branches: [ master ]
+on: [push, pull_request]
 
 jobs:
   nrf52832:

@@ -78,3 +78,4 @@ The following tools are used:
 - GCC ARM Embedded as the compiler
 - Nordic's nrfutil 0.5.2 for flashing the firmware by serial interface
 - J-Link for flashing the bootloader by SWD interface
+
